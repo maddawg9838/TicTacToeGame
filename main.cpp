@@ -58,22 +58,44 @@ void SelectPlayers ()
 
 void CreateBoard ()
 {
+    
 
 }
 
 void PlayGame ()
 {
-
+    /*
+    if (gameOver == true)
+    {
+        Message ();
+    }
+    else
+    {
+        
+    }
+    */
 }
 
 void PlayComputer ()
 {
-
+    /*
+    if (gameOver == true)
+    {
+        Message ();
+    }
+    else
+    {
+        
+    }
+    */
 }
 
-void Message ()
+void Message (int winner)
 {
-
+    /*
+     cout << "Congradulations on Winning Player" << winner << "!!" << endl;
+     return;
+     */
 }
 
 bool Continue ()
