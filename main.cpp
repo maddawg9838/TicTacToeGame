@@ -5,12 +5,17 @@ using namespace std;
 // Fixes: test File, Create Board, PlayGame, PlayComputer, Message, Continue Functions;
 // Additions: Another player, extra board, specialization of the game
 
+// Global Prototypes
 void SelectPlayers ();
 void CreateBoard ();
 void PlayGame ();
 void PlayComputer ();
 void Message ();
 bool Continue ();
+
+// Global Variables
+const ROW = 3;
+const COL = 3;
 
 
 int main()
@@ -58,13 +63,28 @@ void SelectPlayers ()
 
 void CreateBoard ()
 {
-    
-
+    /*
+    for (int i = 1; i < COL; i ++)
+    {
+        for (int j = 0; i < ROW; j++
+             {
+                 cout << "__|";
+             }
+        cout << endl;
+    }
+                            
+    for (int a = 3; a < COL; a ++)
+    {
+        for (int j = 0; i < ROW; j++
+             {
+                 cout << "__";
+             }
+        cout << endl;
+        }
 }
 
 void PlayGame ()
 {
-    /*
     if (gameOver == true)
     {
         Message ();
@@ -73,12 +93,10 @@ void PlayGame ()
     {
         
     }
-    */
 }
 
 void PlayComputer ()
 {
-    /*
     if (gameOver == true)
     {
         Message ();
@@ -87,12 +105,10 @@ void PlayComputer ()
     {
         
     }
-    */
 }
 
 void Message (int winner)
 {
-    /*
      cout << "Congradulations on Winning Player" << winner << "!!" << endl;
      return;
      */
