@@ -2,7 +2,6 @@
 
 This project should
 1. Generate the board for tic tac toe
-2. Choose between playing a computer versus another person
-3. Allow the game to be played
-4. Make a congradulations message to the winner
-5. Allows for the user to play again or exit
+2. Allow the game to be played between two people
+3. Make a congradulations message to the winner
+4. Allows for the user to play again or exit
