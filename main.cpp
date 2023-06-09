@@ -14,8 +14,8 @@ void Message ();
 bool Continue ();
 
 // Global Variables
-const ROW = 3;
-const COL = 3;
+const int ROW = 3;
+const int COL = 3;
 
 
 int main()
@@ -25,7 +25,7 @@ int main()
     do {
     SelectPlayers ();
     playMore = Continue ();
-    } while (playMore = true);
+    } while (playMore == true);
 
 }
 
@@ -39,12 +39,12 @@ void SelectPlayers ()
 
     cin >> numberOfPlayers;
 
-    if (numberOfPlayers = 1)
+    if (numberOfPlayers == 1)
     {
         CreateBoard();
         PlayGame();
     }
-    else if (numberOfPlayers = 2)
+    else if (numberOfPlayers == 2)
     {
         CreateBoard();
         PlayComputer();
@@ -63,10 +63,9 @@ void SelectPlayers ()
 
 void CreateBoard ()
 {
-    /*
-    for (int i = 1; i < COL; i ++)
+    for (int i = 0; i < COL; i ++)
     {
-        for (int j = 0; i < ROW; j++
+        for (int j = 0; i < ROW; j++)
              {
                  cout << "__|";
              }
@@ -75,7 +74,7 @@ void CreateBoard ()
                             
     for (int a = 3; a < COL; a ++)
     {
-        for (int j = 0; i < ROW; j++
+        for (int j = 0; j < ROW; j++)
              {
                  cout << "__";
              }
@@ -111,7 +110,6 @@ void Message (int winner)
 {
      cout << "Congradulations on Winning Player" << winner << "!!" << endl;
      return;
-     */
 }
 
 bool Continue ()
@@ -138,3 +136,37 @@ bool Continue ()
 
     return false;
 }
+
+/*
+Testing Code
+
+#include <iostream>
+
+using namespace std;
+
+void CreateBoard();
+
+const int COL = 3;
+const int ROW = 3;
+
+int main()
+{
+    CreateBoard();
+}
+
+void CreateBoard()
+{
+    int placement[COL][ROW] = {{'1', '2', '3'}, {'4', '5', '6'}, {'7', '8', '9'}};
+
+    for (int i = 0; i < COL; i++)
+    {
+        for (int j = 0; j < ROW; j++)
+        {
+            cout << "|" 
+            cout << placement[i][j] << "|";
+        }
+        cout << "__";
+        cout << endl;
+    }
+}
+*/
